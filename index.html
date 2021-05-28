@@ -6,34 +6,82 @@
     <meta name="author" content="Branislav Mateáš">
     <title>City Performer - Šiesty zmysel pre realitných maklérov</title>
     <link rel="stylesheet" href="./css/myStyles.css">
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css"> 
+    <script src="./bootstrap/js/bootstrap.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#"><img id="logo" src="./img/logo.svg" alt="City Performer logo"></a>
-            <ul id="menu">
-                <li><a href="#">Home </a></li>
-                <li><a href="#">Features <img class="more" src="./img/caret-down-solid.svg"></a></li>
-                <li><a href="#">Pricing</li></a>
-                <li><a href="#">More <img class="more" src="./img/caret-down-solid.svg"></a></li>
-            </ul>
-            <div id="callToAction">
-                <span class="lgnBtn"><a href="#"><button id="login">Login</button></a></span>
-                <span class="tryBtn"><a href="#"><button class="try">Try now</button></a></span>
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid col-xl-8 col-lg-10 col-md-11 col-sm-9">
+                <a href="#">
+                    <img src="./img/logo.svg" class="navbar-brand" alt="City Performer logo">
+                </a>
+                <button class="navbar-toggler first-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" 
+                        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="animated-icon1"><span></span><span></span><span></span></div>
+                </button>
+                    <div class="col-sm-10 collapse navbar-collapse" id="navbarMenu">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Home
+                                    <img class="erov" src="./img/arrow-right.png" alt="">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features
+                                    <img class="erov" src="./img/arrow-right.png" alt="">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing
+                                    <img class="erov" src="./img/arrow-right.png" alt="">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">More
+                                    <img class="erov" src="./img/arrow-right.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <div id="headerTlac" class="nav-link">
+                                <div>
+                                    <a id="login" href="#">
+                                        Login
+                                    </a>
+                                </div>
+                                <div>
+                                    <a class="try" href="#">
+                                        Try now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
+        </nav>
+
+        <!-- MAIN HEADER -->        
+        <div class="container-fluid col-xl-8 col-lg-10 col-md-11">
             <div id="headerBottom">
                 <div id="upText">
-                    <h1 class="slogan"><strong>Šiesty zmysel pre</strong><br> realitných maklérov</h1>
-                    <h3 class="underSlogan">Vytvárajte budúcnosť kúpy, predaja a investícií do <br> nehnuteľností spolu s našim analytickym nástrojom.</h3>
+                    <h1 class="slogan"><strong>Šiesty zmysel pre</strong> realitných maklérov</h1>
+                    <h3 class="underSlogan">Vytvárajte budúcnosť kúpy, predaja a investícií do nehnuteľností spolu s našim analytickym nástrojom.</h3>
                     <div id="downBtns">
                         <span class="tryBtn"><a href="#"><button class="try">Vyskúšajte zadarmo</button></a></span>
                         <span class="playBtn"><a href="#"><button class="playVideo"><img src="./img/play.png">Play Video</button></a></span>
                     </div>
                 </div>
             </div>
-        </nav>           
+        </div>  
+        
     </header>
+
+
+
+
     <section id="companies">
         <div class="flexContainer">
             <img src="./img/cepi.png" alt="CEPI">
@@ -46,6 +94,7 @@
         </div>
         <h3 id="compSlogan">Join the 20,000+ companies using our tool</h3>
     </section>
+    <!--
     <section id="details">
         <h2 id="detailsUvod">City Performer využíva Big Data a poskytuje <strong>okamžité <br> 
             analýzy</strong> pre <strong>lepšie realitné rozhodnutia.</strong>  S naším <br> 
@@ -193,5 +242,124 @@
             <span class="playBtn"><a href="#"><button class="playVideo">Pozrite si  čo všetko ešte vieme</button></a></span>
         </div>
     </section>
+    <section id="cusStories">
+        <div id="storiesContainer">
+            <h3 class="title">Customer stories</h3>
+            <h2 class="secSlogan"><strong>Trusted by 1000+</strong> reality agents, developers <br>
+                and companies</h2>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="car">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="3" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="4" class="active"></li>
+                    </ol>   
+                    <div class="carousel-inner">
+
+                        <div class="item carousel-item active">
+                            <div class="row">
+
+
+                                <div class="col-sm-2">
+                                    <img class="profile" src="./img/scoth.png">  
+                                    <div class="thumb-wrapper">
+                                          <h4 class="name">John Scoth</h4>    
+                                          <h3 class="title">Developer</h3> 
+                                          <p>“CMaecenas congue, purus tempus viverra efficitur, elit purus hendrerit sapien, ac 
+                                              ultrices massa nisi in nulla. Fusce efficitur dui at erat tempus, ornare porttitor 
+                                              elit sodales. Sed vitae odio ut odio lobortis rutrum sed eu odi conte very well. ”</p>       
+                                    </div>
+                                </div>
+
+
+                                <div class="col-sm-2">
+                                    <img class="profile" src="./img/levarsky.png">
+                                    <div class="thumb-wrapper">
+                                        <h4 class="name">Daniel Levarsky</h4>
+                                        <h3 class="title">Developer</h3>     
+                                        <p>“Curabitur sed dapibus nisl. Maecenas congue, purus tempus viverra efficitur, elit 
+                                            purus hendrerit sapien, ac ultrices massa nisi in nulla. Fusce efficitur dui at erat 
+                                            tempus, ornare porttitor elit sodales. Sed vitae odio ut odio lobortis rutrum sed eu 
+                                            odi conte very well. ”</p>                   
+                                    </div>
+                                </div>	
+                                
+                                
+                                <div class="col-sm-2">
+                                    <img class="profile" src="./img/krajcovic.png">
+                                    <div class="thumb-wrapper">
+                                        <h4 class="name">Jozef Krajčovič</h4>
+                                        <h3 class="title">the more</h3>
+                                        <p>“Sapien, ac ultrices massa nisi in nulla. Fusce efficitur dui at erat tempus, ornare 
+                                            porttitor elit sodales. Sed vitae odio ut odio lobortis rutrum sed eu odi conte very 
+                                            wellpurus hendrerit sapien ”</p>
+                                    </div>
+                                </div>	
+
+
+                                <div class="col-sm-2">
+                                    <img class="profile" src="./img/augustin.png">
+                                    <div class="thumb-wrapper">
+                                        <h4 class="name">Peter Augustin</h4>
+                                        <h3 class="title">Pixwell</h3>
+                                        <p>“Vetnsons  sed dapibus nisl. Maecenas congue, purus tempus viverra efficitur, elit 
+                                            purus hendrerit sapien, ac ultrices massa nisi in nulla. Fusce efficitur dui at erat 
+                                            tempus, ornare porttitor elit sodales. Sed vitae odio ut odio lobortis rutrum sed eu 
+                                            mora tson good point for us. ”</p>
+                                    </div>
+                                </div>	
+                                
+                                
+
+                                <div class="col-sm-2">
+                                    <img class="profile" src="./img/fiktivna.png">  
+                                    <div class="thumb-wrapper">
+                                          <h4 class="name">Evka Fiktivna</h4>  
+                                          <h3 class="title">Reality agent</h3>    
+                                          <p>“Tempus viverra efficitur, elit purus hendrerit sapien, ac ultrices massa nisi in 
+                                              nulla. Fusce efficitur dui at erat tempus, ornare porttitor elit sodales. Sed vitae 
+                                              odio ut odio lobortis rutrum sed eu mora tson  ”</p>         
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        
+                        </div>
+                    </div>
+                    
+                    
+                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                        <img src="./img/arrow-left.png">
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                        <img src="./img/arrow-right.png">
+                    </a>
+                </div>
+                </div>
+            </div>
+        </div>                        		
+
+
+
+    </section>
+-->
+
+            
+                    
+
 </body>
+<script>
+    $(document).ready(function () {
+        $('.first-button').on('click', function () {
+          $('.animated-icon1').toggleClass('open');
+        });
+    });
+</script>
 </html>
