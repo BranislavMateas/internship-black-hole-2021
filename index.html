@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Branislav Mateáš">
     <title>City Performer - Šiesty zmysel pre realitných maklérov</title>
+    <link rel="icon" href="./img/site.png">
     <link rel="stylesheet" href="./css/myStyles.css">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css"> 
     <script src="./bootstrap/js/bootstrap.min.js"></script>  
@@ -14,7 +15,7 @@
     <header>
         <!-- NAVIGATION BAR -->
         <nav class="navbar navbar-expand-md">
-            <div class="container-fluid col-xl-8 col-lg-10 col-md-11 col-sm-9">
+            <div class="container-fluid col-xl-8 col-lg-10 col-md-11 col-sm-12">
                 <a href="#">
                     <img src="./img/logo.svg" class="navbar-brand" alt="City Performer logo">
                 </a>
@@ -22,66 +23,71 @@
                         aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                     <div class="animated-icon1"><span></span><span></span><span></span></div>
                 </button>
-                    <div class="col-sm-10 collapse navbar-collapse" id="navbarMenu">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Home
-                                    <img class="erov" src="./img/arrow-right.png" alt="">
+                <div class="col-sm-10 collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home
+                                <img class="erov" src="./img/arrow-right.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features
+                                <img class="erov" src="./img/arrow-right.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing
+                                <img class="erov" src="./img/arrow-right.png" alt="">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">More
+                                <img class="erov" src="./img/arrow-right.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <div id="headerTlac" class="nav-link">
+                            <div>
+                                <a class="login" href="#">
+                                    Login
                                 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Features
-                                    <img class="erov" src="./img/arrow-right.png" alt="">
+                            </div>
+                            <div>
+                                <a class="try" href="#">
+                                    Try now
                                 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing
-                                    <img class="erov" src="./img/arrow-right.png" alt="">
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">More
-                                    <img class="erov" src="./img/arrow-right.png" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="d-flex">
-                            <div id="headerTlac" class="nav-link">
-                                <div>
-                                    <a id="login" href="#">
-                                        Login
-                                    </a>
-                                </div>
-                                <div>
-                                    <a class="try" href="#">
-                                        Try now
-                                    </a>
-                                </div>
                             </div>
                         </div>
                     </div>
-            </div>
-        </nav>
-
-        <!-- MAIN HEADER -->        
-        <div class="container-fluid col-xl-8 col-lg-10 col-md-11">
-            <div id="headerBottom">
-                <div id="upText">
-                    <h1 class="slogan"><strong>Šiesty zmysel pre</strong> realitných maklérov</h1>
-                    <h3 class="underSlogan">Vytvárajte budúcnosť kúpy, predaja a investícií do nehnuteľností spolu s našim analytickym nástrojom.</h3>
-                    <div id="downBtns">
-                        <span class="tryBtn"><a href="#"><button class="try">Vyskúšajte zadarmo</button></a></span>
-                        <span class="playBtn"><a href="#"><button class="playVideo"><img src="./img/play.png">Play Video</button></a></span>
-                    </div>
                 </div>
             </div>
-        </div>  
-        
+        </nav>
+    
+
+    <!-- MAIN HEADER -->  
+        <section class="container-fluid col-xl-8 col-lg-10 col-md-11 col-sm-12 col-xs-12">
+            <div class=" col-xl-6 col-lg-6 col-md-7 col-sm-10 col-xs-12 d-flex headerContent">
+                <h1 class="col-lg-12 col-md-10 col-sm-12 col-xs-12 slogan"><strong>Šiesty zmysel pre</strong> realitných maklérov</h1>
+                <h3 class="col-xl-12 col-lg-12 col-md-10 col-sm-12 col-xs-12 underSlogan">Vytvárajte budúcnosť kúpy, predaja a investícií do nehnuteľností spolu s našim analytickym nástrojom.</h3>
+                <div id="downBtns" >
+                    <a class="try" href="#">
+                        Vyskúšajte zadarmo
+                    </a>
+                    <a class="login" href="#">
+                        <img src="./img/play.png">
+                        <strong>Play video</strong>
+                    </a>
+                </div>
+            </div>
+        </section>
     </header>
+        
+   
 
 
 
-
+<!--
     <section id="companies">
         <div class="flexContainer">
             <img src="./img/cepi.png" alt="CEPI">
@@ -94,7 +100,7 @@
         </div>
         <h3 id="compSlogan">Join the 20,000+ companies using our tool</h3>
     </section>
-    <!--
+    
     <section id="details">
         <h2 id="detailsUvod">City Performer využíva Big Data a poskytuje <strong>okamžité <br> 
             analýzy</strong> pre <strong>lepšie realitné rozhodnutia.</strong>  S naším <br> 
