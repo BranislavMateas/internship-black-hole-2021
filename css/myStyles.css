@@ -466,6 +466,7 @@ dropdown-toggle-ellipsis {
     color: #999999;
     line-height: 20px;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 @media screen and (max-width: 1067px) {
@@ -605,7 +606,7 @@ dropdown-toggle-ellipsis {
     line-height: 31px;
     color: #999999;
     padding-bottom: 24px;
-    
+    margin-bottom: 0;
 }
 
 .secSlogan {
@@ -613,6 +614,11 @@ dropdown-toggle-ellipsis {
     line-height: 48px;
     width: 100%;
     padding-bottom: 32px;
+    margin-bottom: 0;
+}
+
+#forWho .secSlogan {
+    padding-bottom: 32px !important;
 }
 
 .box {
@@ -631,6 +637,7 @@ dropdown-toggle-ellipsis {
     font-size: 1.125em;
     line-height: 31px;
     width: auto;
+    margin-bottom: 0px
 }
 
 .imgBox {
@@ -677,7 +684,8 @@ dropdown-toggle-ellipsis {
     }
 
     #forWho .title, #forWho .secSlogan {
-        padding: 24px;
+        padding: 0 24px;
+        padding-bottom: 24px;
     }
 }
 
@@ -686,10 +694,6 @@ dropdown-toggle-ellipsis {
 #how {
     margin: 0 auto;
     border-bottom: 1px solid #EBEBEB;
-}
-
-.leftHow {
-    margin-top: 64px;
 }
 
 .leftHow img {
@@ -710,6 +714,7 @@ dropdown-toggle-ellipsis {
     border-bottom: 64px;
     padding-left: 5px;
     max-width: 550px;
+    margin-bottom: 4px;
 }
 
 .roundedList > li {
@@ -753,6 +758,7 @@ dropdown-toggle-ellipsis {
 @media screen and (max-width: 768px) {
     #how .title, #how .secSlogan {
         padding: 24px;
+        padding-top: 0px;
         text-align: center;
     }
 }
@@ -856,6 +862,7 @@ dropdown-toggle-ellipsis {
 #howContin .underSlogan {
     width: 550px;
     margin: 0 auto;
+    padding-top: 0;
 }
 
 @media screen and (max-width: 622px) {
@@ -907,7 +914,8 @@ dropdown-toggle-ellipsis {
 @media screen and (min-width: 1800px) {
     #howContin .right img {
         min-width: auto;
-        height: 850px;
+        height: 850px !important;
+        width: 600px !important;
     }
 }
 
