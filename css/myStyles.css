@@ -853,13 +853,13 @@ dropdown-toggle-ellipsis {
     flex-direction: column;
 }
 
-.underSlogan {
+#howContin .underSlogan {
     width: 550px;
     margin: 0 auto;
 }
 
 @media screen and (max-width: 622px) {
-    .underSlogan {
+    #howContin .underSlogan {
         width: 90vw;
     }
 }
