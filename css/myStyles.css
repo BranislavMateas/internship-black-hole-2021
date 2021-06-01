@@ -794,6 +794,7 @@ dropdown-toggle-ellipsis {
 #howContin .right img {
     width: 90%;
     float: right;
+    margin-top: -32px;
 }
 
 #howContin .right img::after {
