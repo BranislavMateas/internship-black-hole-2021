@@ -709,6 +709,7 @@ dropdown-toggle-ellipsis {
     counter-reset: line;
     border-bottom: 64px;
     padding-left: 5px;
+    max-width: 550px;
 }
 
 .roundedList > li {
@@ -743,6 +744,10 @@ dropdown-toggle-ellipsis {
 .roundedList li {
     margin-left: -7.5px;
     padding-left: 50px;
+}
+
+#how .secSlogan {
+    max-width: 652px;
 }
 
 @media screen and (max-width: 768px) {
@@ -848,6 +853,17 @@ dropdown-toggle-ellipsis {
     flex-direction: column;
 }
 
+.underSlogan {
+    width: 550px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 622px) {
+    .underSlogan {
+        width: 90vw;
+    }
+}
+
 @media screen and (max-width: 1600px) {
     #howContin .right img {
         display: none;
@@ -930,6 +946,7 @@ dropdown-toggle-ellipsis {
 
     #howContin .try {
         width: 100%;
+        font-size: 0.875em !important;
     }
     
     #howContin .login {
