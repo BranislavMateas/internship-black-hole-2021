@@ -7,8 +7,10 @@
     <title>City Performer - Šiesty zmysel pre realitných maklérov</title>
     <link rel="icon" href="./img/site.png">
     <link rel="stylesheet" href="./css/myStyles.css">
+    <link rel="stylesheet" href="./css/flickity.css" media="screen">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css"> 
     <script src="./bootstrap/js/bootstrap.min.js"></script>  
+    <script src="./js/flickity.pkgd.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
 </head>
 <body>
@@ -260,119 +262,73 @@
                 </div>
             </div>
         </div>
-       
     </section>
     
-    
-    <!--
-    <section id="cusStories">
-        <div id="storiesContainer">
-            <h3 class="title">Customer stories</h3>
-            <h2 class="secSlogan"><strong>Trusted by 1000+</strong> reality agents, developers <br>
-                and companies</h2>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="car">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
-                    <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="3" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="4" class="active"></li>
-                    </ol>   
-                    <div class="carousel-inner">
-
-                        <div class="item carousel-item active">
-                            <div class="row">
-
-
-                                <div class="col-sm-2">
-                                    <img class="profile" src="./img/scoth.png">  
-                                    <div class="thumb-wrapper">
-                                          <h4 class="name">John Scoth</h4>    
-                                          <h3 class="title">Developer</h3> 
-                                          <p>“CMaecenas congue, purus tempus viverra efficitur, elit purus hendrerit sapien, ac 
-                                              ultrices massa nisi in nulla. Fusce efficitur dui at erat tempus, ornare porttitor 
-                                              elit sodales. Sed vitae odio ut odio lobortis rutrum sed eu odi conte very well. ”</p>       
-                                    </div>
-                                </div>
-
-
-                                <div class="col-sm-2">
-                                    <img class="profile" src="./img/levarsky.png">
-                                    <div class="thumb-wrapper">
-                                        <h4 class="name">Daniel Levarsky</h4>
-                                        <h3 class="title">Developer</h3>     
-                                        <p>“Curabitur sed dapibus nisl. Maecenas congue, purus tempus viverra efficitur, elit 
-                                            purus hendrerit sapien, ac ultrices massa nisi in nulla. Fusce efficitur dui at erat 
-                                            tempus, ornare porttitor elit sodales. Sed vitae odio ut odio lobortis rutrum sed eu 
-                                            odi conte very well. ”</p>                   
-                                    </div>
-                                </div>	
-                                
-                                
-                                <div class="col-sm-2">
-                                    <img class="profile" src="./img/krajcovic.png">
-                                    <div class="thumb-wrapper">
-                                        <h4 class="name">Jozef Krajčovič</h4>
-                                        <h3 class="title">the more</h3>
-                                        <p>“Sapien, ac ultrices massa nisi in nulla. Fusce efficitur dui at erat tempus, ornare 
-                                            porttitor elit sodales. Sed vitae odio ut odio lobortis rutrum sed eu odi conte very 
-                                            wellpurus hendrerit sapien ”</p>
-                                    </div>
-                                </div>	
-
-
-                                <div class="col-sm-2">
-                                    <img class="profile" src="./img/augustin.png">
-                                    <div class="thumb-wrapper">
-                                        <h4 class="name">Peter Augustin</h4>
-                                        <h3 class="title">Pixwell</h3>
-                                        <p>“Vetnsons  sed dapibus nisl. Maecenas congue, purus tempus viverra efficitur, elit 
-                                            purus hendrerit sapien, ac ultrices massa nisi in nulla. Fusce efficitur dui at erat 
-                                            tempus, ornare porttitor elit sodales. Sed vitae odio ut odio lobortis rutrum sed eu 
-                                            mora tson good point for us. ”</p>
-                                    </div>
-                                </div>	
-                                
-                                
-
-                                <div class="col-sm-2">
-                                    <img class="profile" src="./img/fiktivna.png">  
-                                    <div class="thumb-wrapper">
-                                          <h4 class="name">Evka Fiktivna</h4>  
-                                          <h3 class="title">Reality agent</h3>    
-                                          <p>“Tempus viverra efficitur, elit purus hendrerit sapien, ac ultrices massa nisi in 
-                                              nulla. Fusce efficitur dui at erat tempus, ornare porttitor elit sodales. Sed vitae 
-                                              odio ut odio lobortis rutrum sed eu mora tson  ”</p>         
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        
-                        </div>
-                    </div>
-                    
-                    
-                    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                        <img src="./img/arrow-left.png">
-                    </a>
-                    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                        <img src="./img/arrow-right.png">
-                    </a>
-                </div>
+    <!-- CAROUSEL -->
+    <section id="carousel">
+        <h3 class="title">Customer stories</h3>
+        <h2 class="secSlogan"><strong>Trusted by 1000+</strong> reality agents, developers and companies</h2>
+        <div class="main-carousel" data-flickity='{ "initialIndex": 3 }'>
+            <div class="carousel-cell">
+                <img src="./img/krajcovic.png">
+                <div class="content">
+                    <h4 class="secSlogan"><strong>Jozef Krajčovič</strong></h4>
+                    <h5 class="title">the more</h5>
+                    <p>
+                        “Sapien, ac ultrices massa nisi in nulla. Fusce efficitur dui at erat tempus, ornare porttitor elit 
+                        sodales. Sed vitae odio ut odio lobortis rutrum sed eu odi conte very wellpurus hendrerit sapien ”
+                    </p>   
                 </div>
             </div>
-        </div>                        		
-
-
-
+            <div class="carousel-cell"> 
+                <img src="./img/augustin.png">
+                <div class="content">
+                    <h4 class="secSlogan"><strong>Peter Augustin</strong></h4>
+                    <h5 class="title">Pixwell</h5>
+                    <p>
+                        “Vetnsons  sed dapibus nisl. Maecenas congue, purus tempus viverra efficitur, elit purus hendrerit 
+                        sapien, ac ultrices massa nisi in nulla. Fusce efficitur dui at erat tempus, ornare porttitor elit 
+                        sodales. Sed vitae odio ut odio lobortis rutrum sed eu mora tson good point for us. ”
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <img src="./img/fiktivna.png">
+                <div class="content">
+                    <h4 class="secSlogan"><strong>Evka Fiktivna</strong></h4>
+                    <h5 class="title">Reality agent</h5>
+                    <p>
+                        “Tempus viverra efficitur, elit purus hendrerit sapien, ac ultrices massa nisi in nulla. Fusce 
+                        efficitur dui at erat tempus, ornare porttitor elit sodales. Sed vitae odio ut odio lobortis rutrum 
+                        sed eu mora tson  ”
+                    </p>  
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <img src="./img/scoth.png">
+                <div class="content">
+                    <h4 class="secSlogan"><strong>John Scoth</strong></h4>
+                    <h5 class="title">Developer</h5>
+                    <p>“CMaecenas congue, purus tempus viverra efficitur, elit purus hendrerit sapien, ac ultrices massa 
+                        nisi in nulla. Fusce efficitur dui at erat tempus, ornare porttitor elit sodales. Sed vitae odio 
+                        ut odio lobortis rutrum sed eu odi conte very well. ”
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <img src="./img/levarsky.png">
+                <div class="content">
+                    <h4 class="secSlogan"><strong>Daniel Levarsky</strong></h4>
+                    <h5 class="title">Developer</h5>
+                    <p>
+                        “Curabitur sed dapibus nisl. Maecenas congue, purus tempus viverra efficitur, elit purus hendrerit 
+                        sapien, ac ultrices massa nisi in nulla. Fusce efficitur dui at erat tempus, ornare porttitor elit 
+                        sodales. Sed vitae odio ut odio lobortis rutrum sed eu odi conte very well. ”
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
--->
 
             
                     
@@ -383,6 +339,23 @@
         $('.first-button').on('click', function () {
           $('.animated-icon1').toggleClass('open');
         });
+    });
+
+    // flickity init
+    var elem = document.querySelector('.main-carousel');
+    var flkty = new Flickity( elem, {
+        // options
+        cellAlign: 'center',
+        contain: true,
+        adaptiveHeight: false,
+        imagesLoaded: true,
+        wrapAround: true
+    });
+
+    // element argument can be a selector string
+    //   for an individual element
+    var flkty = new Flickity( '.main-carousel', {
+    // options
     });
 </script>
 </html>

@@ -13,6 +13,15 @@ html {
     min-height: 6437px;
     overflow-x: hidden;
     outline-color: #fff;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, span, a, div, li, p {
+    font-family: 'Roboto', sans-serif;
 }
 
 @media screen and (max-width: 767px) {
@@ -48,6 +57,9 @@ h4 {
     font-size: 1em !important;
 }
 
+h5 {
+    font-size: 0.875em !important;
+}
 
 /* HEADER */
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -934,10 +946,11 @@ dropdown-toggle-ellipsis {
 }
 
 #howContin .login {
-    margin-left: 32px;
+    margin-left: 16px;
     font-size: 	0.875em;
     font-weight: 700;
     line-height: 52px;
+    text-align: center;
 }
 
 
@@ -966,139 +979,118 @@ dropdown-toggle-ellipsis {
 }
 
 
-
-
-/*
-.playVideo {
-    font-weight: 700;
-    font-size: 1em;
-    line-height: 20px;
+/* CAROUSEL */
+#carousel {
+    background-color: #F9FAFF;
     text-align: center;
-    margin-left: 33.33px;
-    color: #2E5BFF;
-    border: none;
+    padding-bottom: 196px;
+}
+
+#carousel .title {
+    margin-top: 0;
+    padding-top: 128px;
+}
+
+#carousel .secSlogan {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 64px;
+}
+
+.carousel-cell {
+    width: 21.875% !important;
+    margin-right: 30px;
+}
+
+.content {
+    margin-top: -44px;
+    border-radius: 8px;
     background-color: #fff;
 }
 
-.thumb-wrapper .name {
-    line-height: 19px;
-    font-weight: bold;
-    color: #010101;
-    margin-top: -68px;
-    margin-bottom: 0;
+.carousel-cell .secSlogan {
+    font-size: 1em !important;
+    max-width: 150px !important;
+    line-height: 19px !important;
+    padding-top: 60px !important;
+    padding-bottom: 8px !important;
 }
 
-.thumb-wrapper .title {
-    font-size: 0.875em !important;
+.carousel-cell .title {
+    padding: 0 !important;
+    padding-bottom: 24px !important;
+    line-height: 16px !important;
 }
 
-.thumb-wrapper p {
-    text-align: left;
-    color: #555F71;
-    font-size: 1em;
-    line-height: 26px;
-    margin-bottom: 0;
+.carousel-cell  p {
+    margin: 0;
+    padding: 0px 24px 24px 24px;
+    text-align: left !important;
 }
 
-.carousel-control-prev, .carousel-control-next {
-	height: 54px;
-	width: 54px;
-	background: #fff;	
+.flickity-page-dots {
+    bottom: -52px !important;
 }
 
-.carousel-control-next, .carousel-control-prev {
-    width: 54px !important;
-    top: -10% !important;
+.flickity-page-dots .dot {
+    background-color: #fff !important;
+    border: 1px solid #999999;
 }
 
-.carousel-control-prev, .carousel-control-next {
-	margin: auto 0;
-	border-radius: 50%;
-	opacity: 1 !important;
+.flickity-page-dots .is-selected {
+    background-color: #999999 !important;
 }
 
-.carousel-indicators li, .carousel-indicators li.active {
-	width: 16px;
-	height: 16px;
-	margin: 8px;
-	border-radius: 50%;
-	border: none;
+.flickity-prev-next-button.previous .arrow {
+    transform: scale(3.783) translate(5.5px,5.5px) !important;
 }
 
-.carousel-indicators li {	
-	background: #fff;
-}
-.carousel-indicators li.active {	
-	background: #EBEBEB;
+.flickity-prev-next-button.next .arrow {
+    transform: scale(3.783) rotate(180deg) translate(-21.5px,-21.5px);
 }
 
-.carousel .thumb-wrapper {
-	padding-top: 126px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 28px;
-	background: #fff;
-	border-radius: 8px;
-	text-align: center;
-	position: relative;
-    width: 350px;
+.flickity-button:focus {
+    box-shadow: 0 0 0 3px #2E5BFF;
 }
 
-.carousel .item {
-	min-height: 300px;
+.flickity-button:focus-visible {
+    box-shadow: 0 0 0 1px #2E5BFF;
 }
 
-.carousel {
-	margin-top: 64px;
+.flickity-prev-next-button.previous {
+    left: calc(100vw - 83.3333333333%) !important;
 }
 
-#cusStories .title {
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0px;
+.flickity-prev-next-button.next {
+    right: calc(100vw - 83.3333333333%) !important;
 }
 
-#cusStories .secSlogan {
-    text-align: center;
-    width: auto;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
+@media screen and (max-width: 1200px) {
+    .carousel-cell {
+        width: 33.33333% !important;
+    }
 }
 
-#cusStories {
-    width: 100%;
-    padding-top: 129px;
-    background-color: #002aff;
-    padding-bottom: 220px;
+@media screen and (max-width: 992px) {
+    .carousel-cell {
+        width: 50% !important;
+    }
 }
 
-#storiesContainer {
-    width: 1110px;
-    margin: 0 auto;
+@media screen and (max-width: 576px) {
+    .carousel-cell {
+        width: 75% !important;
+    }
+
+    .carousel-cell  p {
+        text-align: center !important;
+    }
+
+    .flickity-prev-next-button.previous {
+        left: 0 !important;
+    }
+    
+    .flickity-prev-next-button.next {
+        right: 0 !important;
+    }
 }
-
-.car {
-    margin: 0 auto;
-    width: 120% !important;
-}
-
-.col-sm-2 {
-    text-align: center;
-}
-
-.row {
-    justify-content: center;
-}
-
-.profile {
-    position: relative;
-    margin-bottom: -13%;
-    z-index: 5;
-}
-
-.car ol {
-    margin: -104px;
-}
-
-
-*/
