@@ -1094,3 +1094,79 @@ dropdown-toggle-ellipsis {
         right: 0 !important;
     }
 }
+
+
+/* THEY WROTE ABOUT US */
+#theyWrote {
+    padding: 128px 0px;
+    text-align: center;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+#theyWrote .secSlogan {
+    padding-bottom: 48px;
+}
+
+
+/* READY TO START? */
+#youReady {
+    margin-top: 132px;
+}
+
+.boxReady {
+    background: url('../img/bg.png') no-repeat;
+    border-radius: 24px;
+    height: 254px;
+    margin-top: -56.5px;
+}
+
+#specialImg {
+    margin-left: 50%;
+}
+
+#navigationPin {
+    margin-left: -2.5%;
+    margin-top: 2%;
+}
+
+#cartPin {
+    margin-left: -20%;
+    margin-top: 18.5%;
+}
+
+#headPin {
+    margin-left: 80%;
+    margin-top: -10%;
+}
+
+.rightReady {
+    float: right;
+    text-align: center;
+    margin-top: -9%;
+}
+
+.rightReadyfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.rightReady .try {
+    background-color: white !important;
+    color: #2E5BFF !important;
+    font-size: 0.875em;
+    width: 280px;
+    text-align: center;
+}
+    
+.leftReady .secSlogan {
+    color: #fff;
+    padding-left: 94px;
+    margin-top: -164px;
+    padding-bottom: 16px;
+}
+
+.leftReady p {
+    color: #fff;
+    padding-left: 94px;
+}
