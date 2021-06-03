@@ -10,7 +10,6 @@
 
 html {
     background-color: #fff;
-    min-height: 6437px;
     overflow-x: hidden;
     outline-color: #fff;
     box-sizing: border-box;
@@ -1111,10 +1110,12 @@ dropdown-toggle-ellipsis {
 /* READY TO START? */
 #youReady {
     margin-top: 132px;
+    margin-bottom: 128px;
 }
 
 .boxReady {
-    background: url('../img/bg.png') no-repeat;
+    background: url('../img/bg.png') no-repeat center;
+    background-size: cover;
     border-radius: 24px;
     height: 254px;
     margin-top: -56.5px;
@@ -1125,27 +1126,27 @@ dropdown-toggle-ellipsis {
 }
 
 #navigationPin {
-    margin-left: -2.5%;
-    margin-top: 2%;
+    margin-left: -25px;
+    margin-top: 97px;
 }
 
 #cartPin {
-    margin-left: -20%;
-    margin-top: 18.5%;
+    margin-left: -350px;
 }
 
 #headPin {
-    margin-left: 80%;
-    margin-top: -10%;
+    margin-left: 135px;
+    margin-top: -40px;
+    margin-bottom: 40px;
 }
 
 .rightReady {
     float: right;
     text-align: center;
-    margin-top: -9%;
+    margin-top: -148px;
 }
 
-.rightReadyfix::after {
+.rightReady::after {
     content: "";
     clear: both;
     display: table;
@@ -1154,19 +1155,113 @@ dropdown-toggle-ellipsis {
 .rightReady .try {
     background-color: white !important;
     color: #2E5BFF !important;
-    font-size: 0.875em;
+    font-size: 0.875em !important;
     width: 280px;
+    line-height: 52px !important;
+    height: 52px !important;
     text-align: center;
+    margin-bottom: 40px;
 }
     
+.leftReady {
+    margin-top: -80px;
+}
+
 .leftReady .secSlogan {
     color: #fff;
     padding-left: 94px;
-    margin-top: -164px;
     padding-bottom: 16px;
+    width: 550px;
 }
 
 .leftReady p {
+    max-width: 420px;
     color: #fff;
     padding-left: 94px;
+}
+
+@media screen and (max-width: 830px) {
+    .rightReady .try {
+        width: 150px !important;
+        border-radius: 30px !important;
+        margin: 0 auto;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    .leftReady .secSlogan {
+        width: 550px;
+        color: #fff;
+        padding-left: 94px;
+    }
+}
+
+@media screen and (max-width: 726px) {
+    .rightReady .try {
+        margin-top: 120px;
+        margin-bottom: -45px;
+    }
+
+    .leftReady {
+        text-align: center;
+    }
+
+    .leftReady .secSlogan {
+        color: #fff;
+        padding-left: 0px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .leftReady p {
+        margin: 0 auto;
+        padding-left: 0;
+        max-width: 70% !important;
+    }
+
+    .rightReady, .leftReady {
+        width: 100% !important;
+    }
+
+    .rightReady {
+        float: none;
+    }
+
+    .boxReady { 
+        min-height: 278px;
+        height: auto;
+        padding-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #navigationPin, #cartPin, #headPin {
+        visibility: hidden;
+    }
+
+    .rightReady .try {
+        width: 70vw !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .boxReady {
+        background-color: #fff !important;
+    }
+}
+
+
+/* FOOTER */
+#footer {
+    background: url('../img/backgrund.png') no-repeat top center;
+    background-size: cover;
+    height: 469px;
+}
+
+#footer h4 {
+    color: #fff;
+}
+
+#footerContent {
+    margin: 0 auto;
 }
