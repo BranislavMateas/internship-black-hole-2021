@@ -299,7 +299,6 @@ dropdown-toggle-ellipsis {
 
 #headerTlac .login:hover {
     transition: 0.3s;
-    background-color: #F9FAFF;
     text-decoration: none;
 }
 
@@ -661,12 +660,17 @@ dropdown-toggle-ellipsis {
 }
 
 #agent {
-    top: 25%;
+    top: 28%;
     position: absolute;
     width: 137.5%;
     height: auto;
 }
 
+@media screen and (min-width: 1650px) {
+    #agent {
+        top: 15%;
+    }
+}
 @media screen and (min-width: 2000px) {
     #agent {
         top: 15%;
@@ -1262,7 +1266,7 @@ dropdown-toggle-ellipsis {
 
     .leftReady .secSlogan {
         color: #fff;
-        padding-left: 0px;
+        padding: 0px 16px !important;
         max-width: 100%;
         margin: 0 auto;
     }
